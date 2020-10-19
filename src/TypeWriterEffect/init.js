@@ -4,8 +4,9 @@ import React, {
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+/* add your text font color as css var */
 const TextField = styled.span`
-  border-right: 0.08em solid black;
+  border-right: 0.08em solid var(--text-font-color);
 `;
 
 const TypeWriterComponent = (props) => {
