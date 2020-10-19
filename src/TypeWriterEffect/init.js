@@ -80,7 +80,8 @@ TypeWriterComponent.propTypes = {
   data: PropTypes.arrayOf(PropTypes.number).isRequired,
 
   /*
-    After complete delete of a word, the time for next word to appear
+    After a sentence is typed, display time of the sentence
+    (i.e) time to start deleting the sentence again
   */
   timeout: PropTypes.number
 };
