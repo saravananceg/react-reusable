@@ -4,5 +4,6 @@ module.exports = {
   transform: {
     '^.+\\.js.?$': 'babel-jest'
   },
-  transformIgnorePatterns: ['node_modules/(?!(fuse.js|semver-regex|@nc-components|@lit|lit*)/)']
+  transformIgnorePatterns: ['node_modules/(?!(fuse.js|semver-regex|@nc-components|@lit|lit*)/)'],
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!**/node_modules/**']
 };
