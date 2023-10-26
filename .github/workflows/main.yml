@@ -23,7 +23,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
+        cache: 'npm'
     # - run: git submodule init && git submodule update
     # - run: yarn install
     # - run: yarn jest --coverage
