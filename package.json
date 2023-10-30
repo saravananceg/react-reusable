@@ -4,7 +4,7 @@
   "description": "Reusable react UI components and utils",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --json --testLocationInResults --outputFile=coverage/report.json"
   },
   "repository": {
     "type": "git",

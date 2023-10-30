@@ -24,9 +24,17 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    # - run: git submodule init && git submodule update
-    # - run: yarn install
-    # - run: yarn jest --coverage
+
+    - name: Test NPM test:unit
+      run: |
+          npm install
+          npm run test
   
-    - uses: saravananceg/jest-coverage-report-action@main
+    - name: Jest coverage report
+      uses: saravananceg/jest-coverage-report-action@main
+
+      with:
+        skip-step: all
+        coverage-file: ./coverage/report.json
+        base-coverage-file: ./coverage/report.json
 
