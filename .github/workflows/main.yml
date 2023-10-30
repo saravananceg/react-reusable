@@ -35,6 +35,6 @@ jobs:
 
       with:
         skip-step: all
-        coverage-file: ./coverage/coverage-final.json
-        base-coverage-file: ./coverage/coverage-final.json
+        coverage-file: ./coverage/report.json
+        base-coverage-file: ./coverage/report.json
 
